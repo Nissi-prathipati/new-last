@@ -1,0 +1,63 @@
+
+<nav class="navbar navbar-light bg-primary">
+
+    <div class="container fluid">
+
+        <img width="100" height="100" alt="Angular Logo"
+
+            src="https://th.bing.com/th?id=OIP.KskL9S4TZ15-oDTJd5EI9wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" />
+
+        <h2>Shopping</h2>
+
+        <div class="d-flex">
+
+            <button routerLink="/product" class="btn btn-danger mx-3"><b>Home</b></button>
+
+            <button routerLink="/Login" class="btn btn-danger mx-3"><b>Logout</b></button>
+
+               
+
+        </div>
+
+    </div>
+
+  </nav>
+
+<div>
+    <h2 style="text-align:center;">Update Item </h2>
+        <form style="margin-left:35%; width: 220px;" #updateForm="ngForm" (ngSubmit)="onSubmit(updateForm)">
+            <p style="margin-top: 10px; padding-top: 40px;">
+            <label for="item" style="font-size: 25px; color: rgb(5, 4, 4);">Name</label><br>
+    
+     
+    
+            <input type="text" id="name" name="name" [(ngModel)]="name" required style="border-radius: 10px; width: 400px; height: 30px;"><br><br>
+    
+     
+    
+            <input type="number" id="id" name="id" [(ngModel)] = "id" required hidden style="border-radius: 10px; width: 400px; height: 30px;">
+    
+     
+    
+            <input type="text" id="image" name="image" [(ngModel)] = "image" required hidden style="border-radius: 10px; width: 400px; height: 30px;">
+    
+     
+    
+            <label for="item" style="font-size: 25px;color: rgb(10, 9, 9);">Price</label><br>
+    
+     
+    
+            <input type="number" id="item" name="price" [(ngModel)]="price" required style="border-radius: 10px;border-width: 2px;width: 400px; height: 30px;"><br><br>
+    
+     
+    
+            <button type="submit" style="margin-left: 40%; cursor: pointer;height:40px; width: 100px;border-radius: 10px; background-color: rgb(14, 9, 9); color: white;font-weight: bold;">Submit</button><br><br><br>
+    
+     
+    
+     
+    
+     
+    
+        </form>
+      </div>

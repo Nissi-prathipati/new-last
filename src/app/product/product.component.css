@@ -1,0 +1,110 @@
+
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(11, 128, 134, 0.1);
+    padding: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    transition: transform 0.2s;
+    max-width: 300px; /* Set the maximum width of the card */
+    border-color: rgb(30, 102, 102);
+    position:relative;
+    margin:30px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    margin:30px;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    
+  }
+  
+  .product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .product-description {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    margin-top: auto; /* Pushes the button to the bottom */
+  }
+  
+  .delete {
+    background-color:rgb(30, 102, 102);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .delete:hover {
+    background-color: rgb(30, 102, 102);
+    margin-right: 10px;
+  }
+  .Details {
+    background-color: rgb(30, 102, 102);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .Details:hover {
+    background-color: rgb(30, 102, 102);
+    margin-right: 10px; 
+  }
+  .update {
+    background-color: rgb(30, 102, 102);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    
+  }
+  
+  .update:hover {
+    background-color: rgb(30, 102, 102);
+    margin-right: 10px;
+  }
+
+  .Container{
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(11, 128, 134, 0.1);
+    padding: 10px;
+    display: flexbox;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    transition: transform 0.2s;
+    max-width: 300px; /* Set the maximum width of the card */
+    border-color: rgb(30, 102, 102);
+    position:absolute;
+    margin:30px;
+  }

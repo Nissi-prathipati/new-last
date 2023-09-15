@@ -1,0 +1,36 @@
+ <div class="navbar-light">
+  <button routerLink="/cart" class="btn btn-danger mx-3"><b>Cart</b></button>
+<button routerLink="/Login" class="btn btn-danger mx-3"><i class="fa fa-fw fa-login">Logout</i></button>
+ </div>
+
+<div class="container">
+<div class="product-card" *ngFor="let user of jsonData">
+  <img src={{user.image}} alt="Image" height="100px" widht="100px" >
+  <div class="product-info">
+      <br>
+    <h3 class="product-title">Name:{{user.name}}</h3>
+    <br>
+    <div class="product-price">Price:{{user.price}}</div>
+    <br>
+    <button (click)="addCart(user)" class="cart">Add to cart</button>
+
+  </div>
+  </div>
+</div>
+  <!-- <div class="Container">
+    <div *ngIf="selectedProduct">
+
+      <h3>Selected Product:</h3>
+  
+      <div>
+  
+        Id: {{ selectedProduct.id }}<br>
+  
+        Name: {{ selectedProduct.name }}<br>
+  
+        Price: {{ selectedProduct.price }}<br>
+        <button (click)="edit_Item(selectedProduct)"style="margin-left: 20px;">Update</button
+       <button (click)="delete_Item(selectedProduct.id)" class="delete">Delete</button>   
+  
+      </div>
+  </div> -->

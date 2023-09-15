@@ -1,0 +1,84 @@
+.navbar-light{
+  
+  position: relative; /* Required for absolute positioning of the button */
+  text-align: right;
+  padding: 20px;
+}
+button{
+  background-color:rgb(30, 102, 102); /* Button background color */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Add padding for button size */
+  border: none; /* Remove default button border */
+  border-radius: 4px; 
+  top: 50%; /* Align vertically in the middle */
+  right: 20px; 
+}
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(11, 128, 134, 0.1);
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  transition: transform 0.2s;
+  max-width: 300px; /* Set the maximum width of the card */
+  border-color: rgb(30, 102, 102);
+  margin:10px;
+  width: 250px; 
+  height: 250px; 
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  margin:30px;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.product-description {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  margin-top: auto; /* Pushes the button to the bottom */
+}
+
+.cart {
+  background-color:rgb(30, 102, 102);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cart:hover {
+  background-color: rgb(30, 102, 102);
+  margin-right: 10px;
+}
+
+
+.container{
+  position:absolute;
+}
+  

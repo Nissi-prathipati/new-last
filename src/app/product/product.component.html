@@ -1,0 +1,31 @@
+
+<div class="product-card" *ngFor="let user of jsonData">
+    <img src={{user.image}} alt="Image" height="130px" widht="100px" >
+    <div class="product-info">
+        <br>
+      <h3 class="product-title">Name:{{user.name}}</h3>
+      <br>
+      <div class="product-price">Price:{{user.price}}</div>
+      <br>
+      <button (click)="delete_Item(user.id)" class="delete" >Delete</button>
+      <button (click)="get_Item(user.id)" class="Details">Details</button>
+      <button (click)="onEdit(user)" class="update">update</button> 
+    </div>
+    </div>
+    <div class="Container">
+      <div *ngIf="selectedProduct">
+
+        <h3>Selected Product:</h3>
+    
+        <div>
+    
+          Id: {{ selectedProduct.id }}<br>
+    
+          Name: {{ selectedProduct.name }}<br>
+    
+          Price: {{ selectedProduct.price }}<br>
+          <!-- <button (click)="edit_Item(selectedProduct)"style="margin-left: 20px;">Update</button>-->
+          <!-- <button (click)="delete_Item(selectedProduct.id)" class="delete">Delete</button>   -->
+    
+        </div>
+    </div>
